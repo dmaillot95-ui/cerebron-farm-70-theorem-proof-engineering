@@ -1,0 +1,23 @@
+{
+  "farm_id": 70,
+  "name": "cerebron-farm-70-theorem-proof-engineering",
+  "domain": "theorem-proof-engineering",
+  "status": "SCAFFOLDED",
+  "protocol": "SPIRALIX-OMEGA",
+  "capabilities": [
+    "theorem-proof-engineering",
+    "formal-proof-checking",
+    "proof-obligation-management"
+  ],
+  "evidence_ceiling": "E2-until-formally-checked",
+  "kernel": "dmaillot95-ui/cerebron-omega-ai",
+  "missions": [
+    "COLLATZ-RETURN-OBSTRUCTION-001"
+  ],
+  "rules": [
+    "COMPUTATION!=PROOF",
+    "FINITE_VERIFICATION!=UNIVERSAL_PROOF",
+    "PROOF_GAP=>UNKNOWN",
+    "CLAIM<=EVIDENCE"
+  ]
+}
