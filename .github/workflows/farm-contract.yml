@@ -1,0 +1,22 @@
+name: CEREBRON F70 Farm Contract
+on:
+  push:
+    paths: ['farm.json','.github/workflows/farm-contract.yml']
+  workflow_dispatch:
+jobs:
+  validate-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Validate farm contract
+        shell: python
+        run: |
+          import json
+          p=json.load(open("farm.json"))
+          assert p["farm_id"]==70
+          assert "formal-proof-checking" in p["capabilities"]
+          assert "COLLATZ-RETURN-OBSTRUCTION-001" in p["missions"]
+          assert "FINITE_VERIFICATION!=UNIVERSAL_PROOF" in p["rules"]
+          print("F70_CONTRACT_VERIFIED")
