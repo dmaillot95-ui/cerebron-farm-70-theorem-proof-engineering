@@ -1,8 +1,8 @@
 {
   "schema": "AGORA_RECURSIVE_STATE_V2",
-  "state_id": "dmaillot95-ui/cerebron-farm-70-theorem-proof-engineering:36046020629",
-  "parent_state_id": "dmaillot95-ui/cerebron-farm-70-theorem-proof-engineering:36044877326",
-  "iteration": 579,
+  "state_id": "dmaillot95-ui/cerebron-farm-70-theorem-proof-engineering:36047421261",
+  "parent_state_id": "dmaillot95-ui/cerebron-farm-70-theorem-proof-engineering:36046020629",
+  "iteration": 580,
   "resource": "dmaillot95-ui/cerebron-farm-70-theorem-proof-engineering",
   "residual": "COLLECT_REAL_OUTPUT",
   "claims": [],
